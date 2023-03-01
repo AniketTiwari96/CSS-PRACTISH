@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events bubbling and events capturing</title>
+    <style>
+        body{
+            border: 2px solid red;
+            /* margin: 300px; */
+            width: 400px;
+            height: 350px;
+            box-sizing: border-box;
+            background-color: grey;
+        }
+        #mainDiv{
+            margin: 80px;
+            background-color: green;
+            border:2px solid red;
+            width: 200px;
+            height: 150px;
+        }
+        #mainDiv button{
+            margin: 60px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainDiv">
+        <button id="btn">button</button>
+    </div>
+
+    <script>
+        let d=document.getElementById("mainDiv");
+        let b=document.getElementById("btn");
+
+        // this event for bubbling 
+        b.addEventListener("click" , btnClicked);
+        d.addEventListener("click" , divClicked);
+        document.body.addEventListener("click", bodyClicked);
+
+        // this event for cupturing 
+        // b.addEventListener("click" , btnClicked , true);
+        // d.addEventListener("click" , divClicked , true);
+        // document.body.addEventListener("click", bodyClicked , true);
+
+        function btnClicked(stop){
+            console.log("button clicked....");
+            stop.stopPropagation();
+        }
+        function divClicked(){
+            console.log("div clicked....");
+        }    
+        function bodyClicked(){
+            console.log("body clicked....");
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert adhacent HTML</title>
+</head>
+<body>
+    <div id="intro">
+        <h2>heading</h2>
+        <p>this is a p tag</p>
+    </div>
+
+    <script>
+        let lem=document.getElementById('intro');
+        let html = "<h1>this is h1 tag </h1>";
+        // lem.insertAdjacentHTML("beforebegin",html)
+        // lem.insertAdjacentHTML("beforeend",html)
+        // lem.insertAdjacentHTML("afterbegin",html)
+        lem.insertAdjacentHTML("afterend",html)
+    </script>
+</body>
+</html>

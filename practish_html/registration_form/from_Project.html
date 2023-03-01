@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- this is extarnal css -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>form page</title>
+    <!-- this is internal css -->
+    <style>
+        /* this is id selector  */
+        #firstname{
+            color: red;
+        }
+        /* this is class selector  */
+        .lastname{
+            color: blue;
+        }
+        /* this is grouping selector */
+        select,option{
+            background-color: springgreen;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <header>
+                 <h1>Registration form</h1>
+            </header>
+        </div>
+        <div>
+            <form >
+                <label for="firstname" id="firstname"> FirstName</label>
+                 <input type="text" id="firstname" placeholder="First Name">
+                <br>
+                <br>
+                <label for="lastname" id="lastname" class="lastname">
+                    LastName <input type="text" name="" id="lastname" placeholder="Last Name">
+                </label>
+                <br>
+                <br>
+                <label for="Date of Birth">
+                    Date of Birth <input type="date" name="" id="Date of Birth" placeholder="Data of Birth">
+                </label>
+                <br>
+                <br>
+                <label for="Email id">
+                    Email id <input type="email" placeholder="email" id="Email id">
+                </label>
+                <br>
+                <br>
+
+                <label for="Mobile Number">
+                    Mobile Numer <input type="number" name="" id="Mobile Number" placeholder="Mobile Number">
+                </label>
+                <br>
+                <br>
+                <label for="password">
+                    Password <input type="password" name="" id="password" placeholder="Password" >
+                </label>
+                <br>
+                <br>
+                <label for="mygender">Gender</label>
+                    <input type="radio" name="mygender" value="male" id="mygender"> Male
+                    <input type="radio" name="mygender" value="female" id="mygender">Female
+                    <input type="radio" name="mygender" value="others" id="mygender">others
+                <br>
+                <br>
+                <label for="City"><b>Choose Your City</b></label>
+                <select name="city" id="City">
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Tamil Nadu">Uttar Pradesh</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="address">Write Your Self</label><br>
+                    <textarea name="address" id="address" cols="25" rows="4"></textarea>
+                <br>
+                <br>
+                <label for="submit"></label>
+                    <input type="submit" name="" id="submit" value="Submit Now">
+                <label for="reset"></label>
+                    <input type="reset" name="" id="reset" value="Reset">
+            </form>
+        </div>
+    </center>
+</body>
+</html>

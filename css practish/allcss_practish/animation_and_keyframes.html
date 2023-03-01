@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and animations</title>
+    <style>
+        .container{
+            background-color: rgb(67, 110, 179);
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: rgb(148, 167, 150);
+            border: 3px solid red;
+            /* margin: 10px; */
+            position: relative;
+
+            animation-name: aniket1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 2s;  */
+            /* animation: scaleme 2s;  */
+
+            animation-direction: alternate;
+            animation-direction:reverse;
+            animation-direction:alternate-reverse;
+
+            /* animation sort hand  */
+            /* animation: animation-name animation-duration animation-timing-function animaiton-dely aimation-iteration-count animation-fill-mode; */
+
+        }
+        /* @keyframes aniket1 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+        }*/
+        @keyframes aniket1 {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>

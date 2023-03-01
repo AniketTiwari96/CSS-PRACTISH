@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /* .box{
+            border: 3px solid rgb(3, 2, 2);
+            width: 150px;
+            height: 150px;
+            margin-right:10px;
+            margin-bottom: 5px ;
+            display: inline-block;
+        }
+        #box3{
+            position:absolute
+        } */
+        #parent{
+            border: 3px solid green;
+            padding: 5px;
+            width: 50%;
+            margin: 200px;
+        }
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color:rgb(197, 238, 11);
+            /* margin-bottom: 10px; */
+            display: inline-block;
+            /* margin-top: 10px; */
+            margin:10px;
+
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            background-color:rgb(36, 239, 121);
+            /* margin-bottom: 10px; */
+            /* margin-top: 10px; */
+            display: inline-block;
+            margin-right: 10px;
+            /* this is relative */
+            /* position: relative;
+            top:50px;
+            left: 50px; */
+
+            /* this is absolute  */
+            /* position: absolute;
+            top: 0px;
+            left: 0px; */
+
+            /* this is fixed  */
+            position: fixed;
+            /* top: 0px;      
+            right: 0px;       */
+            bottom: 10px;
+            right: 10px;
+
+        }
+        #box3{
+            width: 100px;
+            height: 100px;
+            background-color:rgb(221, 20, 154);
+            display: inline-block;
+            /* margin-top: 10px; */
+
+        }
+        body{
+            /* width: 2000px; */
+            height:1500px;
+            background-color: rgb(249, 133, 133);
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+</body>
+</html>

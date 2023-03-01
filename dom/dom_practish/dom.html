@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <ul>
+        <li id="first">list 1</li>
+        <li class="cl">list 2</li>
+        <li class="cl">list 3</li>
+    </ul> -->
+
+    <!-- this example for query selector  -->
+    <!-- <h2 class="intro">heading 1</h2> -->
+    <div id="div1">
+        <p class="intro">paragraf 1</p>
+        <h2 class="intro">heading 2</h2>
+        <p>paragraf 2</p>
+        <h2>heading 3</h2>
+        <p class="intro">paragraf 3</p>
+    </div>
+
+    <!-- this example for traveling elements-->
+     <!-- <ul>
+        <li id="intro">list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul> -->
+    <!-- <ul id="parent">
+        <li>list a</li>
+        <li id="shive">list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul> -->
+    <script>
+        // let d=document.all
+        // console.log(d);
+        // Array.from(d).forEach((item)=>{
+            //     console.log(item);
+            // })
+        // here we are using id 
+        // let element = document.getElementById('first').innerHTML = "<p>hello world </p>";
+        // console.log(element);
+
+        // class yaha ham multipale element ko ecceses kiye hai isi liye loop ka use karna pada hai 
+        // let elem = document.getElementsByClassName('cl');
+        // console.log(elem);
+        // for (let i=0; i<elem.length; i++){
+        //     let a=elem[i].innerHTML = "hello"
+        //     console.log(a);
+        // }
+
+        // here we are using tagname 
+            // let div1=document.getElementById('div1');
+            // let d = div1.getElementsByTagName('h2');
+            // for (let i=0; i<d.length; i++){
+            //     let res = d[i].innerHTML = 'hello'
+            // }
+
+        // this is query selectors 
+        // let ele = document.querySelector("p.intro");
+        // console.log(ele);
+
+        // let elem=document.querySelectorAll('p.intro');
+        // console.log(elem);
+        // for(i=0;i<elem.length;i++){
+        //     elem[i].innerHTML = "hello"
+        //     console.log(elem);
+        // }
+
+
+        // this example for traveling elements 
+        // select parent elments 
+        // let ele = document.getElementById('intro')
+        // let pa = ele.parentElement;
+        // // let a = pa.innerHTML = 'hello'
+        // console.log(pa);
+
+        // select child elments 
+            // let ele = document.getElementById('parent');
+            // let ch = ele.lastElementChild;
+            // let ch = ele.firstElementChild;
+            // let ch = ele.children
+            // let ch = ele.children[0]
+            // console.log(ch);
+
+        // select shibling 
+        // let elme = document.getElementById('shive');
+        // let shiv = elme.previousElementSibling;
+        // let shiv = elme.nextElementSibling;
+        // console.log(shiv);
+    </script>
+</body>
+</html>

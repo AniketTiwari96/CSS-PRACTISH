@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+        padding: 20px;
+        border: 2px solid red;
+        margin:20px;
+        /* this is boxsing  isme hham nigative value bhi de sakte hai*/
+        /* box-shadow: 10px 10px rgb(13, 207, 71); */
+
+        /* this is negative box shadow */
+        /* box-shadow: -10px -10px rgb(13, 207, 71); */
+
+        /* isme ham blor ko bhi ser kar sakte hai isme jo 13px hai wah blur ki value hai */
+        /* box-shadow: 10px 10px 13px red; */
+
+        /* isme ham nigative value bhi de sakte hai  */
+        /* box-shadow: -10px -10px -13px red; */
+
+        /* isme ham spred redius bhi use kar shakte hai  isme jo 20px hai wah spred redius hai  */
+        /* box-shadow: 10px 10px 13px 20px rgb(115, 131, 212); */
+
+        /* agar box shadow box ke inside lagana chahte hai to inset ka use karna padega  or yaha par hamne multipla shadow ek sath lagaye hai*/
+        box-shadow: inset 20px 10px 20px 5px  green ,inset 10px 20px 10px 6px red;
+
+
+        }
+        .card h2{
+            /* yaha per ham kisi text par shadow laga raha hai  */
+            text-shadow: 2px 3px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+
+            <h2>Thid is c++ course</h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit cum totam quis non voluptatum ea optio adipisci eaque quae, rerum, id aliquid facere! Alias exercitationem magnam rem eum, at explicabo.
+        </div>
+        <div class="card" id="card-3">
+
+            <h2>This is html and css course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores hic minima delectus commodi, a incidunt corrupti qui officiis voluptatem iusto pariatur laborum! Quae veritatis nam doloremque ab amet at quidem?</p>
+        </div>
+        <div class="card" id="card-2">
+
+            <h2>this is JavaScript course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit laborum aspernatur neque illo vero eum alias magni deserunt ut aperiam sed, corrupti numquam placeat quidem fuga voluptas voluptatibus assumenda!</p>
+        </div>
+    </div>
+</body>
+</html>

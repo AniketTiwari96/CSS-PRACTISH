@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            margin-bottom: 10px;
+            display: block;
+            margin: auto;
+            margin: 100px 200px;
+            background-color: rgb(166, 241, 160);
+        }
+        #box1{
+            background-color: rgb(213, 197, 197);
+            position:absolute;
+            top: 0px;
+             
+        }
+        #box2{
+            position:absolute;
+            /* this is z index iska use box up and dwoun karne ke liye kiya jata hia  */
+            /* z-index: 1; */
+            top: 30px;
+            right: -70px;
+            background-color: rgb(220, 131, 131);
+            /* visibility hidden element ko gyab kar deta hai or lekin spesh bhi chhodta hai  */
+            /* visibility: hidden; */
+            /* display none element ko gayab kar deta hai or koi spech nahi chhodta hai  */
+            /* display: none;  */
+        } 
+        #box3{
+            position:absolute;
+            /* z-index: 2; */
+            top: 60px;
+            right: -30px;
+            background-color: rgb(120, 216, 240);
+        } 
+        #box4{
+            position:absolute;
+            top: 90px;
+            right: 10px;
+            background-color: rgb(230, 250, 46);
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background-color: rgb(127, 216, 145);
+            position:relative;
+        }
+        .container h1{
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+            color: rgb(37, 45, 35);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is z index Exmapel</h1>
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+</body>
+</html>

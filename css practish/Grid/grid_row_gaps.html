@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            /* yaha par grid ko define karte hai  */
+            display: grid;
+            /* yaha par three rows bana rahe hai   */
+            grid-template-rows: 1fr 1fr 4fr;
+            /* yaha par jo bhi rowa bacha hoga wah ayega grid auto me  */
+            grid-auto-rows: 2fr;
+            /* yaha par column create kar rahe hai  */
+            grid-template-columns: 1fr 4fr;
+            /* yaa par gap define kar rahe hai  */
+            grid-gap: 1rem;
+            /* yaha par ham column create kiye hai reapet ka use karke 
+            ek baar me 5 column create karega kiuki 5 baar reapet kiye hai  */
+            grid-template-columns: repeat(4,1fr);
+        }
+        .box{
+            background-color: rgb(106, 186, 178);
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is box-1</div>
+        <div class="box">this is box-2</div>
+        <div class="box">this is box-3</div>
+        <div class="box">this is box-4</div>
+        <div class="box">this is box-5</div>
+        <div class="box">this is box-6</div>
+        <div class="box">this is box-7</div>
+        <div class="box">this is box-8</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-10</div>
+    </div>
+</body>
+</html>

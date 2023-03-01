@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create and append elments in js</title>
+</head>
+<body>
+    <div id="intro">
+        <p id="p1">hello this is p tag</p>
+    </div>
+    <script>
+        let elm = document.getElementById('intro')
+        // how to create elements;
+        let h1 = document.createElement('h1')
+        // how to create class and id 
+        // h1.className = 'heading'
+        // h1.id='h1'
+
+        // this method using for adding text 
+        let text = document.createTextNode('this is h1 tag');
+        // let text2 =document.write("this is cooming from write");
+        h1.append(text);
+        // this property using for adding text 
+        // h1.textContent = "this is h1 tag"
+        // how to append elments 
+        // elm.appendChild(h1)
+
+        // textcontent ka use karke data read bhi kar sakte hai 
+        // let pra = document.getElementById('p1')
+        // pra.textContent
+        // console.log(pra);
+
+         
+        // yaha ham h1 ko direct body me append kara diya hai 
+        // document.body.appendChild(h1)
+    </script>
+    <!-- <script>
+    document.write(Date());
+    </script> -->
+</body>
+</html>

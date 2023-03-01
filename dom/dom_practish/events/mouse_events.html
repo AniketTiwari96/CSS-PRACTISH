@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- this is inline events  -->
+    <!-- <div id="box" oncontextmenu="fun()"></div> -->
+    <!-- <div id="box" ondblclick="fun()"></div> -->
+    <!-- <div id="box" onmousedown="fun()"></div> -->
+    <!-- <div id="box" onmouseup="fun()"></div> -->
+    <div id="box" onmouseout="fun()"></div>
+
+
+
+
+
+    <script>
+        function fun(){
+            // alert("right click events");
+            // alert("dblclick events activeted")
+            // alert("ommousedoun events activeted")
+            // alert("ommouseup events activeted")
+            alert("ommouseout events activeted")
+
+
+
+        }
+         // this is events listener 
+        //  let div = document.getElementById("box");
+        // div.addEventListener("contextmenu",fun);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid autofit and minmax</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            background-color: rgb(100, 199, 208);
+
+            /* yaha par ham do tarike se columnn define kiye hai  */
+            /* grid-template-columns: 120px 120px 120px ;
+            grid-template-columns: 1fr 1fr 1fr; */
+
+            /* yaha par ham log autofit minmiax ka use kiye  hai 
+            page lo responsive panane ke liye  */
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+
+            /* yaha par hamne center kiya hai */
+            /* justify-content: center;
+            align-items: center; */
+        }
+        .box{
+            border: 2px solid red;
+            background-color: rgb(145, 126, 175);
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+    </div>
+</body>
+</html>

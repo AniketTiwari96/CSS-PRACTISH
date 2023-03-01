@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#main_box{
+    border: 2px solid red;
+    height: 500px;
+}
+.first_box{
+    border: 2px solid green;
+    height: 150px;
+    display: flex;
+}
+.inner_div1{
+    border: 2px solid rgb(59, 224, 29);
+    width: 50%;
+    height: 100%; 
+}
+.para{
+    width: 100%;
+    height: 98%;
+    font-size: 23px;
+    margin: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inner_div2{
+    border: 2px solid red;
+    /* width: 45%; */
+    /* display: inline-block; */
+    height: 100%;
+    /* margin-left:-5px ; */
+    width: 50%;
+}
+
+
+.second_box{
+    border: 2px solid black;
+    height: 350px;
+    display: flex;
+}
+.secondFirst{
+    border: 2px solid rgb(12, 8, 228);
+    width: 30%;
+}
+.sinnseS{
+    border: 2px solid red;
+    width: 70%;
+
+}
+.sinnseS .last{
+    border: 2px solid blue;
+    height: 50%;
+}

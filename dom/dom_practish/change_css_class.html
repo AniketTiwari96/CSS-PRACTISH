@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change css classes</title>
+</head>
+<body>
+    <div id="box" class="color">
+        <p>this is a p tag</p>
+    </div>
+
+    <script>
+        let box = document.getElementById("box");
+        // for (let css of box.classList){
+        //     console.log(css);
+        // }
+
+        // how to add another class 
+        box.classList.add("dim")
+
+        // how to remove class 
+        box.classList.remove("color");
+
+        // how to replace class 
+        box.classList.replace("dim","ped")
+
+        // how to cheak class present or not 
+        let res=box.classList.contains("ped")
+        // console.log(res);
+
+        // toggle ka kam ulta hot hai class hai to remove kar dega nahi hai to laga dega 
+        box.classList.toggle("dim")
+
+        // how to find height and width
+        let w=box.offsetWidth;
+        let h=box.offsetHeight;
+        let w1=box.clientWidth;
+        let h1=box.clientHeight;
+        console.log(h);
+        console.log(w);
+        console.log(h1);
+        console.log(w1);
+    </script>
+    
+</body>
+</html>

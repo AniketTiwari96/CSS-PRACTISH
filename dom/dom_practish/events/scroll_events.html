@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll Events</title>
+    <style>
+        .sameClass{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            background-color: grey;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div dir="mainDiv">
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+        <div class="sameClass"></div>
+    </div>
+
+    <script>
+        // only for scrolling 
+        // window.addEventListener("scroll", function(){
+        //     console.log("scrolling");
+        // })
+
+        window.addEventListener("wheel" , function(event){
+            if(event.deltaY<0){
+                console.log("scrolling up");
+            }
+            else{
+                console.log("scrolling down");
+            }
+        })
+    </script>
+</body>
+</html>

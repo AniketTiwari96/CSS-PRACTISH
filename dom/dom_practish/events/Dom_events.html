@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom events</title>
+</head>
+<body>
+    <!-- this is inline events  -->
+    <!-- <button id="btn" onclick="btnClick()">Click me</button> -->
+
+    <!-- this is events listener method  -->
+    <button id="btn">Click Me</button>
+
+    <script>
+        function btnClick(){
+            alert('button was clicked!')
+        }
+
+        // this is events listener method 
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",btnClick)
+
+        // this is sort hand for events listener using
+        // let btn = document.getElementById("btn");
+        // btn.addEventListener("click",function(){
+        //     alert("button was clicked!!")
+        //     console.log("button was clicked");
+        // })
+
+        // this is mouseover listener 
+        // btn.addEventListener("mouseover",function(){
+        //     alert("mouse over is activated!")
+        //     console.log("mouse over is activated");
+        // })
+
+        btn.addEventListener("mouseout",function(){
+            alert("mouse out is activated!")
+            console.log("mouse out is activated");
+        })
+
+    </script>
+
+
+<!-- how to add multipale events listener  -->
+    <!-- <button id="btn">Click me</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        function click1(){
+            alert("click 1 activated")
+            console.log("click 1 activated");
+        }
+
+        function click2(){
+            alert("click 2 activeted")
+            console.log("click 2 activated");
+
+        }
+        btn.addEventListener("click",click1)
+        btn.addEventListener("click",click2)
+
+        // how to remove events listener 
+        btn.removeEventListener("click",click2)
+
+    </script> -->
+</body>
+</html>

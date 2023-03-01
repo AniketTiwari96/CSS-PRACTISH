@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        div li p{
+            background-color: rgb(173, 97, 97);
+            border: 2px solid green;
+        }
+        div > p{
+            background-color: red;
+        }
+        div + h1{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <p>this is anything</p>
+            <li>
+                <p>this is my li paragraf</p>
+            </li>
+        </ul>
+        <p>thid is paragraf</p>
+    </div>
+    <h1>this is heading</h1>
+</body>
+</html>

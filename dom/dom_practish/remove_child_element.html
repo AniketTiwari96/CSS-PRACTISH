@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove child element</title>
+</head>
+<body>
+    <ul id="manu">
+        <li>home</li>
+        <li>about</li>
+        <li>product</li>
+        <li>contect</li>
+    </ul>
+
+    <script>
+        let parent=document.getElementById('manu');
+        let elm=parent.firstElementChild.nextElementSibling.nextElementSibling;
+        parent.removeChild(elm)
+        // console.log(elm);
+
+        // how to remove main ul 
+        // document.body.removeChild(parent)
+    </script>
+</body>
+</html>

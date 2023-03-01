@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>span row and column</title>
+    <style>
+        .container{
+            display:grid;
+            background-color: rgb(141, 27, 75);
+            /* yaha par three grid column define liya hai  */
+            /* grid-template-columns: 1fr 3fr 4fr ; */
+
+            /* yaha par hamne column define kiya hai reapt use karke 
+            ek sath 5 column define kiya hai  */
+            grid-template-columns: repeat(5,1fr);
+
+            /* yaha par hamne 5 row define kiya hai  */
+            grid-template-rows: repeat(5,1fr);
+
+            /* yaha par hamne all gap diya hai  */
+            grid-gap: 1rem;
+
+            /* yaha par hamne column gap diya hai  */
+            /* grid-column-gap: 1rem; */
+
+            /* yaha par hamne row me gap diya hai  */
+            /* grid-row-gap: 2rem; */
+        }
+        .box{
+            border: 2px solid red;
+            background-color: rgb(191, 120, 38);
+            padding: 25px;
+        }
+
+        .box:first-child{
+            /* yaha par ham row column ko spen kiya hai  */
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* isko ham sort hand me bhi likha sakte hai  */
+            grid-column: 1/span 3;
+            grid-row: 1/span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+    </div>
+</body>
+</html>

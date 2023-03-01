@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiwari fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- this is link for logo
+    https://c8.alamy.com/comp/2D6RN8K/dumbbell-gym-logo-design-stock-vector-illustration-isolated-on-white-background-2D6RN8K.jpg -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("./img/abs-1850926.jpg");
+            color: white;
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .mid {
+            /* border: 3px solid rgb(10, 10, 202); */
+            /* position: absolute; */
+            /* top: 20px;
+            right: 45%; */
+            width: 45%;
+            margin: 20px auto;
+            display: block;
+
+        }
+
+        .right {
+            /* border: 3px solid rgb(160, 204, 15); */
+            /* float: right; */
+            /* ham right me float se bhi kar sajte hai ya position se bhi kar sakte hai  */
+            position: absolute;
+            top: 30px;
+            right: 34px;
+            display: inline-block;
+            width: 300px;
+            /* height: 50px; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding-left: 10px;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 33px 40px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 130px;
+            /* height: 150px; */
+            filter: invert(100%);
+        }
+
+        .left div {
+            color: rgb(27, 159, 207);
+            text-align: center;
+            line-height: 15px;
+            font-size: 23px;
+
+            /* background-color: rgb(169, 175, 176); */
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px; 
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container{
+            border: 3px solid rgb(12, 230, 41);
+            /* ya ham margin ka bhi use kar shake hai  */
+            margin: 150px 200px 50px 70px;
+            width: 500px;
+            padding: 50px 0px 50px 50px ;
+            border-radius: 20px;
+            background-color: rgb(138, 164, 172);
+            position: relative;
+        }
+        .container h1{
+            margin:10px 0px 30px 5px;
+            font-size:28px ;
+        }
+        .form-group{
+            text-align: center;
+            display: block;
+            font-size: 30px;
+            margin: 20px 50px 10px 20px;
+            padding: 3px 30px  ;
+            border: 2px solid rgb(27, 227, 77);
+            color: rgb(15, 211, 146);
+            background-color: rgb(94, 99, 101);
+            border-radius: 20px;
+            /* width: 350px; */
+        }
+        .form-group input{
+            height: 25px;
+            font-size:14px;
+            border-radius: 20px;
+            padding-left: 10px;
+
+            margin-bottom: 7px;
+            border: 2px solid red;
+            text-align: center;
+            /* box-sizing: border-box; */
+            /* position: absolute;
+            right: 30px; */
+        }
+        .form-group textarea{
+            height: 30px;
+            width: 200px;
+            font-size: 14px;
+            border: 2px solid red;
+            border-radius: 20px;
+            margin: 15px -90px 8px 50px;
+            text-align: center;
+        }
+        .add{
+            position: absolute;
+            left: 130px;
+            top: 652px;
+        }
+        #city{
+            width: 130px;
+            height: 30px;
+            border: 2px solid red;
+            border-radius: 20px;
+            margin-bottom: 5px;
+            font-size: 20px;
+            color: rgb(25, 7, 230);
+            background-color: rgb(206, 180, 180);
+        }
+        .container button{
+            display: block;
+            margin: auto 130px 10px ;
+            width: 200px;
+        }
+        #reset{
+            display: block;
+            margin: auto;
+            margin-right: 169px;
+            margin-top: 10px;
+            height: 30px;
+            width: 200px;
+            font-size: 20px;
+            background-color:black;
+            color: white;
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+        #reset:hover{
+            background-color: rgb(183, 108, 108);
+        }
+        #gender{
+            width: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo  -->
+        <div class="left">
+            <img src="./img/istockphoto-1156345605-1024x1024.jpg" alt="This is Gym logo">
+            <div>
+                Tiwari Fitness
+            </div>
+        </div>
+        <!-- left box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#">Aboute Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+        <!-- right box for botton  -->
+        <div class="right">
+            <button class="btn">Call Us New</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Dharamshala now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="" id="firstname" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="" id="lastname" placeholder="Enter Your Last Name">
+            </div>
+            <div class="form-group">
+                <label for="number">Mo Number:</label>
+                <input type="text" name="" id="number" placeholder="Enter Your Mo number">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="gender" placeholder="Male">Male
+                <input type="radio" name="gender" id="gender" placeholder="FeMale">Female
+            </div>
+            <div class="form-group">
+                <label for="Gmail">Gmail-ID:</label>
+                <input type="email" name="mail" id="Gmail" placeholder="Enter your Email id">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your Email password">
+            </div>
+            <div class="form-group">
+                <label for="City">Choose Your City:</label>
+                <select name="city" id="city">
+                    <option value="Delhi">Delhi</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Goa">Goa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address" class="add">Address:</label>
+                <textarea name="address" id="address" cols="10" rows="3"></textarea>
+            </div>
+            <button class="btn">Sumbit</button>
+            <div>
+                <input type="reset" name="" id="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
